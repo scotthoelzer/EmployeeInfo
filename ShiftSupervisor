@@ -1,0 +1,42 @@
+package EmployeeInfo;
+
+/**
+ *
+ * @author Scott Hoelzer
+ */
+public class ShiftSupervisor extends Employee {
+    
+    private double sal, bonus;
+    
+//default no arg constuctor    
+    public ShiftSupervisor(){
+        sal = 50000;
+        bonus = 1000;
+    }
+    
+// constructor creates ShiftSupervisor object with arguments s for salary and bonus
+    public ShiftSupervisor(double s, double b){
+        sal = s;
+        bonus = b;
+    }
+    
+//mutator method to set salary
+    public void setSalary(double s){
+        sal = s;
+    }
+    
+//method to set bonus
+    public void setBonus(double b){
+        bonus = b;
+    }
+    
+//method to get ssalary
+    public double getSalary(){
+        return sal;
+    }
+    
+//method to get bonus
+    public double getBonus(){
+        return bonus;
+    }
+}
