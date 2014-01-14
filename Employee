@@ -1,0 +1,56 @@
+package EmployeeInfo;
+
+/**
+ *
+ * @author Scott Hoelzer
+ */
+public class Employee {
+    
+    private String employeeName, employeeNum, hireDate;
+    
+//noarg constructor for creating a blank Employee object
+    public Employee(){
+        employeeName = "";
+        employeeNum = "000-A";
+        hireDate = "01/01/00";
+    }
+//constructor creates new Employee object containing the name, number, and 
+//hire date of the employee    
+    public Employee(String name, String num, String date){
+        employeeName = name;
+        employeeNum = num;
+        hireDate = date;
+    }
+
+//mutator method to set name of employee    
+    public void setName(String name){
+        employeeName = name;
+    }
+    
+//mutator method to set employee number
+    public void setNum(String num){
+        employeeNum = num;
+    }
+    
+//mutator method to set hire date
+    public void setDate(String date){
+        hireDate = date;
+    }
+    
+//accessor method to return employee name
+    public String getName(){
+        return employeeName;
+    }
+    
+//accessor method to return employee number
+    public String getNum(){
+        return employeeNum;
+    }
+    
+//accessor method to return hire date
+    public String getDate(){
+        return hireDate;
+    }
+    
+    
+}
