@@ -1,0 +1,30 @@
+package EmployeeInfo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Scott Hoelzer
+ * This program creates a ShiftSupervisor object containing their shift,
+ * hourly pay, name, employee number, and hire date
+ */
+public class EmployeeInfo {
+
+    static Scanner kb = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        
+        double pay, bonus;
+        
+        System. out.print("Please enter the supervisor's annual salary:  ");
+        pay = kb.nextInt();
+        System. out.print("Please enter the supervisor's production bonus:  ");
+        bonus = kb.nextDouble();
+        
+        ShiftSupervisor sSup = new ShiftSupervisor(pay, bonus);
+        System.out.println("Name: " + sSup.getName() + "\nNumber: " + sSup.getNum()
+                + "\nHire Date: " + sSup.getDate() + "\nSalary: " + sSup.getSalary() + 
+                "\nBonus: " + sSup.getBonus());
+        
+    }
+}
